@@ -302,6 +302,7 @@ var npmDl = function (what, opts, then) {
         if(!json.versions[version]) {
           then('version not found');
           then = null;
+          return;
         }
         tarballDl(json.versions[version].dist.tarball, opts, then)
       } else if (tag) {
