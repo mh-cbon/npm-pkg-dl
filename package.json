@@ -1,6 +1,6 @@
 {
   "name": "@mh-cbon/npm-pkg-dl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Download a package like npm",
   "main": "index.js",
   "bin": {
@@ -17,7 +17,8 @@
     "public": "npm publish --access=public"
   },
   "keywords": [
-    "download", "package"
+    "download",
+    "package"
   ],
   "author": "mh-cbon <mh-cbon@users.noreply.github.com>",
   "license": "MIT",
