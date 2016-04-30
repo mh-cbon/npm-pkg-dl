@@ -40,28 +40,28 @@ npmPkgDl('package source', {
 # Examples
 
 ```sh
-$ node bin.js git://github.com/mh-cbon/cors-proxy.git -d some
+$ npm-pkg-dl minimist@">0.0.5" -d some
+some/package
+
+$ npm-pkg-dl @mh-cbon/cors-proxy -d some
+some/package
+
+$ npm-pkg-dl mh-cbon/cors-proxy -d some
+some/package
+
+$ npm-pkg-dl git://github.com/mh-cbon/cors-proxy.git -d some
 some
 
-$ node bin.js minimist@">0.0.5" -d some
-some/package
+$ npm-pkg-dl github:mh-cbon/cors-proxy -d some
+some
 
-$ node bin.js @mh-cbon/cors-proxy -d some
-some/package
-
-$ node bin.js github:mh-cbon/cors-proxy -d some
-some/package
-
-$ node bin.js mh-cbon/cors-proxy -d some
-some/package
-
-$ node bin.js https://github.com/mh-cbon/cors-proxy/archive/v1.0.1.zip -d some
+$ npm-pkg-dl https://github.com/mh-cbon/cors-proxy/archive/v1.0.1.zip -d some
 some/cors-proxy-1.0.1
 
-$ node bin.js https://github.com/mh-cbon/cors-proxy/archive/v1.0.1.tar.gz -d some
+$ npm-pkg-dl https://github.com/mh-cbon/cors-proxy/archive/v1.0.1.tar.gz -d some
 some/cors-proxy-1.0.1
 
-$ node bin.js https://registry.npmjs.org/@mh-cbon/aghfabsowecwn/-/aghfabsowecwn-2.0.0.tgz -d some
+$ npm-pkg-dl https://registry.npmjs.org/@mh-cbon/aghfabsowecwn/-/aghfabsowecwn-2.0.0.tgz -d some
 some/package
 ```
 

@@ -83,7 +83,7 @@ var gitHttpDl = function (what, opts, then) {
     child.stdout.pipe(process.stdout);
     child.stderr.pipe(process.stderr);
     child.on('close', function (code) {
-      if (code===0) return then(null, path.join(dirPath, repo))
+      if (code===0) return then(null, dirPath)
       then('error');
     })
   });
