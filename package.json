@@ -1,0 +1,31 @@
+{
+  "name": "@mh-cbon/npm-pkg-dl",
+  "version": "1.0.0",
+  "description": "Download a package like npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "patch": "npm version patch -m \"patch %s\"",
+    "minor": "npm version minor -m \"minor %s\"",
+    "major": "npm version major -m \"major %s\"",
+    "preversion": "echo \"npm test: not defined\"",
+    "version": "echo \"npm run build: not defined\"",
+    "postversion": "git push && git push --tags && npm run public",
+    "public": "npm publish --access=public"
+  },
+  "keywords": [
+    "download", "package"
+  ],
+  "author": "mh-cbon <mh-cbon@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "hyperdirect": "0.0.0",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "semver": "^5.1.0",
+    "tar": "^2.2.1",
+    "temp": "^0.8.3",
+    "yauzl": "^2.4.1"
+  }
+}
