@@ -47,7 +47,7 @@ $ npm-pkg-dl @mh-cbon/cors-proxy -d some
 some/package
 
 $ npm-pkg-dl mh-cbon/cors-proxy -d some
-some/package
+some
 
 $ npm-pkg-dl git://github.com/mh-cbon/cors-proxy.git -d some
 some
