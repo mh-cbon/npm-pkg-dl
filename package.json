@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Download a package like npm",
   "main": "index.js",
+  "bin": {
+    "npm-pkg-dl": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "patch": "npm version patch -m \"patch %s\"",
