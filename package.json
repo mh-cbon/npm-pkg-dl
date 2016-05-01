@@ -4,7 +4,7 @@
   "description": "Download a package like npm",
   "main": "index.js",
   "bin": {
-    "npm-pkg-dl": "./index.js"
+    "npm-pkg-dl": "./bin.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
