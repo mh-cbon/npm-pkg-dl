@@ -10,7 +10,7 @@ var temp = require('temp');
 var semver = require('semver');
 var pkgJ = require('./package.json')
 var debug = require('debug')(pkgJ.name);
-// temp.track();
+temp.track();
 
 var finalDir = function (opts, then) {
   if (opts.dir) {
