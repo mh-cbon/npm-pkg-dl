@@ -46,6 +46,9 @@ some/package
 $ npm-pkg-dl @mh-cbon/cors-proxy -d some
 some/package
 
+$ npm-pkg-dl @mh-cbon/npm-pkg-dl@stable -d some
+some/package
+
 $ npm-pkg-dl mh-cbon/cors-proxy -d some
 some
 
