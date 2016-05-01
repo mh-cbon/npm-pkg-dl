@@ -306,7 +306,13 @@ var npmDl = function (what, opts, then) {
         }
         tarballDl(json.versions[version].dist.tarball, opts, then)
       } else if (tag) {
-        throw 'unhandled'
+        if(!json['dist-tags'][tag]) {
+          then('tag not found');
+          then = null;
+          return;
+        }
+        version = json['dist-tags'][tag];
+        tarballDl(json.versions[version].dist.tarball, opts, then)
       } else if (range) {
         var validVersions = Object.keys(json.versions)
         .filter(function (v) {
